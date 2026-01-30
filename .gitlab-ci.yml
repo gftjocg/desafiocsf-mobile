@@ -1,0 +1,46 @@
+image: node:18
+
+stages:
+  - install
+  - test
+  - report
+  -
+variables:
+  NODE_VERSION: "25"
+  BROWSERSTACK_USERNAME: "$BROWSERSTACK_USERNAME"
+  BROWSERSTACK_ACCESS_KEY: "$BROWSERSTACK_ACCESS_KEY"
+
+before_script:
+  # Instala Node.js versão correta
+  - curl -fsSL https://deb.nodesource.com/setup_25.x | bash -
+  - apt-get install -y nodejs
+  - node -v
+  - npm install
+
+install_dependencies:
+  stage: install
+  script:
+    - npm ci
+  artifacts:
+    paths:
+      - node_modules/
+
+run_tests:
+  stage: test
+  script:
+    - npm run android.browsertack.app
+  artifacts:
+    when: always
+    paths:
+      - allure-results/
+    expire_in: 1 week
+
+generate_report:
+  stage: report
+  script:
+    - npm run allure:generate
+    - npm run allure:open
+  artifacts:
+    paths:
+      - allure-report/
+    expire_in: 1 week

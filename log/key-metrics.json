@@ -1,0 +1,50 @@
+[
+    {
+        "name": "sdk:automate:hub-management",
+        "entryType": "measure",
+        "startTime": 1769719150973.8206,
+        "duration": 18245.21029999852,
+        "detail": null,
+        "success": false,
+        "failure": {
+            "name": "TimeoutError",
+            "code": "ETIMEDOUT",
+            "timings": {
+                "start": 1769719164194,
+                "socket": 1769719164194,
+                "lookup": 1769719164197,
+                "error": 1769719169207,
+                "phases": {
+                    "wait": 0,
+                    "dns": 3,
+                    "total": 5013
+                }
+            },
+            "event": "request"
+        },
+        "worker": "unknown",
+        "platform": 0
+    },
+    {
+        "name": "sdk:testhub",
+        "entryType": "measure",
+        "startTime": 1769719150970.5396,
+        "duration": 29050.50609999895,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": "unknown",
+        "platform": 0
+    },
+    {
+        "name": "sdk:percy",
+        "entryType": "measure",
+        "startTime": 1769719180287.5203,
+        "duration": 0.2257000058889389,
+        "detail": null,
+        "success": true,
+        "failure": null,
+        "worker": "unknown",
+        "platform": 0
+    }
+]

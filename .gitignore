@@ -1,0 +1,24 @@
+# Mobile apps
+*.apk
+*.ipa
+
+# Appium / Inspector / tools
+tools/
+appium-inspector/
+Appium-Inspector/
+
+# Android / iOS
+android/
+ios/
+
+# Node
+node_modules/
+
+# WDIO / Allure
+allure-results/
+allure-report/
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

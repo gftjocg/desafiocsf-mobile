@@ -1,0 +1,11 @@
+2026-01-29T20:39:10.875Z CLI info [main]     Server listening on port: 5400
+2026-01-29T20:39:10.927Z CLI info     Config : {"userName":"[REDACTED]","accessKey":"[REDACTED]","platforms":[{"platformName":"Android","appium:deviceName":"Google Pixel 7","appium:platformVersion":"13.0","appium:automationName":"UiAutomator2","appium:app":"bs://45e6d3f083e82753e319f152e1687a3d89dfcc2c","projectName":"Smoke Test","buildName":"Primeira execucao","sessionName":"Abrir App","wdioService":"8.48.0"}],"isNonBstackA11yWDIO":false,"accessibility":null,"testObservability":true,"testContextOptions":{"skipSessionName":false,"skipSessionStatus":false,"sessionNameOmitTestTitle":false,"sessionNamePrependTopLevelSuiteTitle":false,"sessionNameFormat":""},"buildTag":[]}
+2026-01-29T20:39:10.958Z CLI info     Should start debug utility: undefined
+2026-01-29T20:39:10.960Z CLI info [testhub:module]  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  Starting testhub from 15384:0
+2026-01-29T20:39:10.961Z CLI info  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  [PRODUCTION] Making POST request to https://sdk.browserstack.com
+2026-01-29T20:39:10.964Z CLI info  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  [PRODUCTION] Making GET request to https://hub.browserstack.com
+2026-01-29T20:39:29.209Z CLI error [selenium]  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  Error finding nearest hub: Timeout awaiting 'request' for 5000ms
+2026-01-29T20:39:32.129Z CLI info  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  [PRODUCTION] Making POST request to https://collector-observability.browserstack.com
+2026-01-29T20:39:40.010Z CLI info [testhub:module]  [jadsondanilocall_BWul5z]   [7767e687-07d1-4c54-b408-b176e4162ebe]  startBuild: response=jlsu8ykqepxxrvcxbzsmdizcxsnxyk6a3wqjd8l2
+2026-01-29T20:39:40.013Z CLI info  [jadsondanilocall_BWul5z]  [jlsu8ykqepxxrvcxbzsmdizcxsnxyk6a3wqjd8l2]  [7767e687-07d1-4c54-b408-b176e4162ebe]  [PRODUCTION] Making POST request to https://api.browserstack.com
+2026-01-29T20:39:40.278Z CLI error [sdk:service]  [jadsondanilocall_BWul5z]  [jlsu8ykqepxxrvcxbzsmdizcxsnxyk6a3wqjd8l2]  [7767e687-07d1-4c54-b408-b176e4162ebe]  Failed to fetch BStack hub: TimeoutError: Timeout awaiting 'request' for 5000ms

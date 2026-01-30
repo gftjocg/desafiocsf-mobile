@@ -1,0 +1,20 @@
+{
+  "registerSuccess": {
+    "username": "teste@dominio.com",
+    "email": "teste@dominio.com",
+    "password": "123456",
+    "expectedResult": "success"
+  },
+  "registerFailEmailExists": {
+    "username": "invalido@dominio.com",
+    "email": "teste@dominio.com",
+    "password": "123456",
+    "expectedResult": "failure"
+  },
+  "registerFailInvalidPassword": {
+    "username": "teste@dominio.com",
+    "email": "teste@dominio.com",
+    "password": "654321",
+    "expectedResult": "failure"
+  }
+}

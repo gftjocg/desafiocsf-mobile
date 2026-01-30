@@ -1,0 +1,17 @@
+{
+  "loginSuccess": {
+    "username": "teste@dominio.com",
+    "password": "123456",
+    "expectedResult": "success"
+  },
+  "loginFailInvalidUser": {
+    "username": "invalido@dominio.com",
+    "password": "123456",
+    "expectedResult": "failure"
+  },
+  "loginFailEmptyUsername": {
+    "username": "",
+    "password": "123456",
+    "expectedResult": "failure"
+  }
+}
