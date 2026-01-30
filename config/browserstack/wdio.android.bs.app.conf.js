@@ -16,11 +16,17 @@ exports.config = {
     // User configuration
     user: process.env.BROWSERSTACK_USERNAME,
     key: process.env.BROWSERSTACK_ACCESS_KEY,
+    protocol: 'https',
+    hostname: 'hub.browserstack.com',
+    port: 443,
+    path: '/wd/hub',
+
     // Use browserstack service
     services: [
         ...(baseConfig.services || []),
         ['browserstack', { buildIdentifier: `${Date.now()}`, browserstackLocal: false }]
     ],
+
     // ============
     // Capabilities
     // ============
